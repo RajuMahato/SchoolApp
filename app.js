@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname + '/public'));
 
+
 app.get('/getres', function(req, res) {
         console.log("Test get");
         res.send("Test data sent");
